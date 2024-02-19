@@ -5,14 +5,14 @@ class Plane
 {
 public:
     Plane();
-    Plane(VectorOperations &, Point3D &);
+    Plane(GeomVectors &, Point3D &);
     ~Plane();
 
-    VectorOperations getNormal() const;
-    Point3D getPointOnPlane() const;
+    GeomVectors normal() const;
+    Point3D pointOnPlane() const;
 
 
 private:
-    VectorOperations mNormal;
+    GeomVectors mNormal;
     Point3D mPointOnPlane;
 };

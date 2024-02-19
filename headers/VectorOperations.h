@@ -4,40 +4,40 @@
 #include "Matrix.h"
 
 class Plane;
-class VectorOperations : public Point3D
+class GeomVectors : public Point3D
 {
 public:
-    VectorOperations();
-    VectorOperations(double x, double y, double z);
-    ~VectorOperations();
+    GeomVectors();
+    GeomVectors(double x, double y, double z);
+    ~GeomVectors();
+    bool vectorEqualCheck(const GeomVectors& vector1 , const GeomVectors& vector2);
+    bool operator==(const GeomVectors &other) const;
+    double magnitude() const;
+    GeomVectors normalizedVector() const;
+    double dotProduct(const GeomVectors &other) const;
+    GeomVectors crossProduct(const GeomVectors &other) const;
 
-    bool operator==(const VectorOperations &other) const;
-    double getMagnitude() const;
-    VectorOperations getNormalized() const;
-    double getDotProduct(const VectorOperations &other) const;
-    VectorOperations getCrossProduct(const VectorOperations &other) const;
+    GeomVectors operator+(const GeomVectors &other) const;
+    GeomVectors operator-(const GeomVectors &other) const;
+    GeomVectors operator*(const GeomVectors &other) const;
+    GeomVectors operator/(const GeomVectors &other) const;
+    GeomVectors setVectorLength(double newLength) const;
 
-    VectorOperations operator+(const VectorOperations &other) const;
-    VectorOperations operator-(const VectorOperations &other) const;
-    VectorOperations operator*(const VectorOperations &other) const;
-    VectorOperations operator/(const VectorOperations &other) const;
-    VectorOperations setVectorLength(double newLength) const;
+    GeomVectors addScalar(double scalar) const;
+    GeomVectors subtractScalar(double scalar) const;
+    GeomVectors multiplyScalar(double scalar) const;
+    GeomVectors divideScalar(double scalar) const;
 
-    VectorOperations addScalar(double scalar) const;
-    VectorOperations subtractScalar(double scalar) const;
-    VectorOperations multiplyScalar(double scalar) const;
-    VectorOperations divideScalar(double scalar) const;
-
-    double getDistanceBetweenVectors(const VectorOperations &other) const;
-    double getDistanceBetweenVectorAndPlane(const Plane &plane) const;
-    double getAngleBetweenVectors(const VectorOperations &other) const;
-    double getAngleBetweenVectorAndPlane(const Plane &plane) const;
+    double distanceBetweenVectors(const GeomVectors &other) const;
+    double distanceBetweenVectorAndPlane(const Plane &plane) const;
+    double angleBetweenVectors(const GeomVectors &other) const;
+    double angleBetweenVectorAndPlane(const Plane &plane) const;
     void angleBetweenVectorAndAxis() const;
 
-    VectorOperations multiplyMatrix(const Matrix &matrix) const;
-    VectorOperations projectionOnVector(const VectorOperations &otherVector) const;
-    VectorOperations projectVectorOnPlane(const VectorOperations &vector, const VectorOperations &planeNormal) const;
-    double angleBetweenVector(const VectorOperations& other);
+    GeomVectors multiplyMatrix(const Matrix &matrix) const;
+    GeomVectors projectionOnVector(const GeomVectors &otherVector) const;
+    GeomVectors projectVectorOnPlane(const GeomVectors &vector, const GeomVectors &planeNormal) const;
+    double angleBetweenVector(const GeomVectors& other);
     void directionCosines() const;
     double angleWithXaxis();
     double angleWithYaxis();

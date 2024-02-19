@@ -4,7 +4,7 @@
 #include "../headers/Writer.h"
 using namespace std;
 
-void Writer::write(std::string &filePath,std::vector<VectorOperations> &vectors)
+void Writer::write(std::string &filePath,std::vector<GeomVectors> &vectors)
 {
     std::ofstream outFile(filePath);
 
@@ -13,10 +13,10 @@ void Writer::write(std::string &filePath,std::vector<VectorOperations> &vectors)
         cout << "Error while opening the file for writing."<<std::endl;
     }
 
-    // Write triangles to the STL file
-    for (const VectorOperations &vector : vectors)
+    // Write vector points to the txt file
+    for (const GeomVectors &vector : vectors)
     {
-        // Write each vertex of the triangle to the STL file
+        // Write each vector point
         outFile<<0.0<<" "<<0.0<<" "<<0.0<<endl;
         outFile <<vector.X() << " " << vector.Z() << " " << vector.Z() << endl;
         
