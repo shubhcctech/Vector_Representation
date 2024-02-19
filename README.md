@@ -64,7 +64,25 @@ To use this project, follow these steps:
 1. Clone the repository to your local machine.
 2. Navigate to the `src` directory.
 3. Compile the source files.
-4. Run the executable(main.cpp) generated after compilation.
+4. Run the executable(main.cpp) generated after compilation.!
+
+Outputs:
+   1. Scaler Addition ![addScaler](https://github.com/shubhcctech/Vector_Representation/assets/158051472/c6c8ea3b-f986-4016-b772-035d668e106d)
+   2. Cross Product ![cross](https://github.com/shubhcctech/Vector_Representation/assets/158051472/7f7c8809-bfd9-4d18-a8e6-7d37c6d8ad28)
+   3. Matrix Multiply ![matrixMultiply](https://github.com/shubhcctech/Vector_Representation/assets/158051472/2dfbfa64-3333-408c-8b94-d7c441e31710)
+   4. New Length ![newLength](https://github.com/shubhcctech/Vector_Representation/assets/158051472/c3b39384-e275-41ee-8cf7-76f6b4a2336d)
+   5. Normalise ![normalise](https://github.com/shubhcctech/Vector_Representation/assets/158051472/3e8fe58e-8114-44fd-ba4a-e49938ee4373)
+   6. Projection on Vector ![projectionVector](https://github.com/shubhcctech/Vector_Representation/assets/158051472/b2c86b83-ef36-4a9c-b661-3f203020d7c8)
+   7. Scaler Substract ![projectionVector](https://github.com/shubhcctech/Vector_Representation/assets/158051472/75dc1867-4b2a-4b1b-9010-b0dcbf0c1b34)
+   8. Projection on plane ![projectionPlane](https://github.com/shubhcctech/Vector_Representation/assets/158051472/25a5d17b-c806-4509-9317-00610cfac063)
+   9. Two Vector Addition ![twoVectorAdd](https://github.com/shubhcctech/Vector_Representation/assets/158051472/66064ec0-0ad2-4b69-b70a-78ef99c371f8)
+
+
+
+
+
+
+   
 
  
  
